@@ -22,17 +22,20 @@ WORKDIR /var/www/html
 # Copy code
 COPY . .
 
-# Cài dependencies Laravel
+# Cài Laravel dependencies
 RUN composer install --no-dev --optimize-autoloader
 
 # Set permissions
 RUN chown -R www-data:www-data /var/www/html \
     && chmod -R 775 storage bootstrap/cache
 
-# Copy Nginx config
+# Xóa config Nginx mặc định để tránh duplicate
+RUN rm -f /etc/nginx/sites-enabled/default /etc/nginx/sites-available/default
+
+# Copy config Nginx của chúng ta
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 EXPOSE 80
 
-# Chạy cả PHP-FPM và Nginx
+# Chạy PHP-FPM và Nginx
 CMD ["sh", "-c", "php-fpm & nginx -g 'daemon off;'"]
