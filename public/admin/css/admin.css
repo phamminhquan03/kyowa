@@ -1,0 +1,356 @@
+/* =========================
+   GLOBAL
+========================= */
+
+body{
+    background:#f1f5f9;
+    color:#1e293b;
+}
+
+/* =========================
+   CARD
+========================= */
+
+.main-card{
+    background:#fff;
+    padding:30px;
+    border-radius:16px;
+    box-shadow:0 4px 20px rgba(0,0,0,.05);
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.dashboard-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
+}
+
+.dashboard-title h1{
+    font-size:28px;
+    font-weight:700;
+    margin-bottom:5px;
+}
+
+.dashboard-title p{
+    margin:0;
+    color:#64748b;
+}
+
+.top-badge{
+    background:#0f172a;
+    color:#fff;
+    padding:8px 18px;
+    border-radius:30px;
+    font-weight:600;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.save-btn{
+    display:inline-block;
+    background:#059669;
+    color:#fff;
+    text-decoration:none;
+    padding:10px 18px;
+    border-radius:10px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.save-btn:hover{
+    background:#047857;
+    color:#fff;
+}
+
+.btn-edit,
+.btn-delete{
+    width:90px;
+    height:38px;
+    border:none;
+    border-radius:8px;
+    font-size:14px;
+    font-weight:600;
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.btn-edit{
+    background:#2563eb;
+    color:#fff;
+}
+
+.btn-edit:hover{
+    background:#1d4ed8;
+    color:#fff;
+}
+
+.btn-delete{
+    background:#dc2626;
+    color:#fff;
+}
+
+.btn-delete:hover{
+    background:#b91c1c;
+    color:#fff;
+}
+
+/* =========================
+   TABLE
+========================= */
+
+.admin-table{
+    margin:0;
+    background:#fff;
+    border:1px solid #dbe3ec;
+}
+
+.admin-table thead{
+    background:#0f172a;
+}
+
+.admin-table thead th{
+    color:white;
+    border:1px solid #0f35aa;
+    padding:15px;
+    font-size:18px;
+    font-weight:600;
+    text-align:center;
+    background-color: #059669;
+}
+
+.admin-table tbody td{
+    border:1px solid #e2e8f0;
+    padding:15px;
+    vertical-align:middle;
+}
+
+.admin-table tbody tr:hover{
+    background:#f8fafc;
+}
+
+/* =========================
+   IMAGE
+========================= */
+
+.table-image{
+    width:120px;
+    height:80px;
+    object-fit:cover;
+    border-radius:8px;
+    border:1px solid #cbd5e1;
+}
+
+/* =========================
+   FORM
+========================= */
+
+.form-card{
+    background:#fff;
+    padding:25px;
+    border-radius:16px;
+    box-shadow:0 4px 20px rgba(0,0,0,.05);
+}
+
+.form-label{
+    font-weight:600;
+}
+
+.form-control,
+.form-select{
+    border-radius:10px;
+    min-height:45px;
+}
+
+.image-preview{
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 24px;
+    margin-top: 18px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+    transition: 0.3s;
+}
+
+.image-preview:hover{
+    transform: scale(1.02);
+}
+
+/* =========================
+   DETAIL PAGE
+========================= */
+
+.btn-back{
+    background:#64748b;
+    color:#fff;
+    text-decoration:none;
+    padding:10px 18px;
+    border-radius:10px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn-back:hover{
+    background:#475569;
+    color:#fff;
+}
+
+.detail-card{
+    border:1px solid #e2e8f0;
+    border-radius:14px;
+    overflow:hidden;
+}
+
+.detail-row{
+    display:flex;
+    border-bottom:1px solid #e2e8f0;
+}
+
+.detail-row:last-child{
+    border-bottom:none;
+}
+
+.detail-label{
+    width:220px;
+    background:#f8fafc;
+    padding:18px;
+    font-weight:600;
+    color:#334155;
+    border-right:1px solid #e2e8f0;
+}
+
+.detail-value{
+    flex:1;
+    padding:18px;
+    color:#1e293b;
+}
+
+.message-box{
+    background:#f8fafc;
+    border:1px solid #e2e8f0;
+    border-radius:10px;
+    padding:15px;
+    white-space:pre-wrap;
+    line-height:1.7;
+}
+.custom-label{
+    font-weight:600;
+    margin-bottom:8px;
+    display:block;
+    color:#334155;
+}
+
+.custom-input{
+    border-radius:10px;
+    min-height:46px;
+}
+
+.ckeditor-wrapper{
+    border:1px solid #dbe3ec;
+    border-radius:10px;
+    overflow:hidden;
+}
+
+.preview-image{
+    width:300px;
+    max-width:100%;
+    height:180px;
+    object-fit:cover;
+    border-radius:12px;
+    border:1px solid #e2e8f0;
+}
+
+.btn-back{
+    background:#64748b;
+    color:#fff;
+    text-decoration:none;
+    border:none;
+    padding:10px 18px;
+    border-radius:10px;
+    font-weight:600;
+}
+
+.btn-back:hover{
+    background:#475569;
+    color:#fff;
+}
+/* =========================
+   PAGINATION
+========================= */
+
+.pagination{
+    gap:6px;
+    margin-bottom:0;
+}
+
+.pagination .page-item .page-link{
+    border:none;
+    min-width:40px;
+    height:40px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:10px !important;
+    background:#ffffff;
+    color:#334155;
+    font-weight:600;
+    box-shadow:0 2px 8px rgba(0,0,0,.05);
+    transition:.3s;
+}
+
+.pagination .page-item .page-link:hover{
+    background:#e2e8f0;
+    color:#0f172a;
+}
+
+.pagination .page-item.active .page-link{
+    background:#0f172a;
+    color:#fff;
+    box-shadow:0 4px 12px rgba(15,23,42,.25);
+}
+
+.pagination .page-item.disabled .page-link{
+    background:#f8fafc;
+    color:#94a3b8;
+    box-shadow:none;
+    cursor:not-allowed;
+}
+/* FORM PHẢN HỒI */
+
+.reply-card{
+    background:#fff;
+    border:1px solid #e2e8f0;
+    border-radius:14px;
+    padding:24px;
+}
+
+.reply-card h4{
+    font-weight:700;
+    color:#1e293b;
+}
+
+.custom-label{
+    font-weight:600;
+    color:#334155;
+    margin-bottom:8px;
+    display:block;
+}
+
+.custom-input{
+    border:1px solid #cbd5e1;
+    border-radius:10px;
+    padding:12px;
+}
+
+.custom-input:focus{
+    border-color:#2563eb;
+    box-shadow:none;
+}
